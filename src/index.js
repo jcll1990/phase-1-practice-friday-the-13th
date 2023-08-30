@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let addedBlood = 0;
     let movieIndexinit = 0;
     let variableMagica = 0;
+    console.log(addedBlood)
      
     
     fetch("http://localhost:3000/movies")
@@ -137,9 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error('Error updating movie:', error);
             });
 
-            setTimeout(function() {
-                location.reload();
-            }, 2);
+            
 
         })
 
